@@ -19,6 +19,13 @@ $(function () {
     //toggle scroll menu
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
+        //adjust menu background
+        if (scroll >= 100) {
+            $('.sticky-navigation').addClass('navbar-shadow');
+        } else {
+            $('.sticky-navigation').removeClass('navbar-shadow');
+        }
+        
         // adjust scroll to top
         if (scroll >= 600) {
             $('.scroll-top').addClass('active');
@@ -26,25 +33,6 @@ $(function () {
             $('.scroll-top').removeClass('active');
         }
         return false;
-    });
-    
-    //open / close video section
-    $('.show-video').click(function(){
-        $('.video-wrapper').addClass('show');
-    });
-    
-    $('.video-close').click(function(){
-        $('.video-wrapper').removeClass('show');
-    });
-
-    // slick slider
-    $('.slick-users').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-        arrows: false
     });
 
     // scroll top top
