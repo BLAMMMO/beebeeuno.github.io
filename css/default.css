@@ -15,7 +15,7 @@
   --pink: #f50057;
   --red: #ff1744;
   --orange: #ff9100;
-  --yellow: #ffff00;
+  --yellow: #fae560;
   --green: #00e676;
   --teal: #1de9b6;
   --cyan: #00e5ff;
@@ -1822,7 +1822,7 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #000000;
   background-color: #fae560;
-  border-color: ##fae560; }
+  border-color: #fae560; }
   .btn-primary:hover {
     color: #ffffff;
     background-color: ##fae560;
